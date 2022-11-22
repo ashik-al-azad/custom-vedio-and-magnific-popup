@@ -1,0 +1,253 @@
+a {
+  text-decoration: none;
+}
+
+.main-menu-area ul {
+  background-color: #26395a;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-menu-area li {
+  display: inline-block;
+}
+
+.main-menu-area li a {
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px;
+  transition: .3s;
+}
+
+/* Dropdown Menu */
+
+.main-menu-area li {
+  position: relative;
+}
+
+.main-menu-area li ul {
+  position: absolute;
+  left: -3px;
+  top: 32px;
+  width: 200px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.main-menu-area li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 52px;
+}
+
+.main-menu-area li ul a {
+  text-transform: none;
+  padding: 10px 15px;
+}
+
+.main-menu-area li:hover>a {
+  background-color: red;
+  color: #fff;
+}
+
+.main-menu-area li ul li {
+  border: 1px solid #fff;
+  display: block;
+}
+
+/* Second Level Dropdown Menu */
+
+.main-menu-area li:hover ul ul {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main-menu-area li ul li ul {
+  left: 196px;
+}
+
+.main-menu-area li ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  top: -2px;
+}
+
+.service-box-bg {
+  background-image: url(img/brain-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.service-box-bg-2 {
+  background-image: url(img/tooth-bg.jpg);
+}
+
+.service-box-bg-3 {
+  background-image: url(img/heartbeat-bg.jpg);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #848488;
+}
+
+.section-title h2 {
+  font-weight: 400;
+  color: #222222;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.service-box-bg img {
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+  background-color: gray;
+  border: 5px solid #26395a;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  margin-left: -35px;
+  transition: .3s;
+}
+
+.single-service-box {
+  border: 1px solid #ebebeb;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.single-service-box h2 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.single-service-box:hover .service-box-bg img {
+  background-color: #1cc9ce;
+  border-color: #fff;
+}
+
+.single-service-box:hover h2 {
+  background-color: #26395a;
+  color: #fff;
+}
+
+.video-play-btn {
+  display: block;
+  background-position: center;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-color: #ddd;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  display: table;
+  color: #fff;
+  transition: .3s;
+}
+
+.video-play-btn:hover {
+  background-size: 110%;
+}
+
+.video-play-btn:hover {
+  color: #fff;
+}
+
+.video-overlay {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  z-index: 1;
+  transform: scale(.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.video-play-btn:hover .video-overlay {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-color: #26395a;
+  z-index: -1;
+  opacity: .7;
+}
+
+.boxed-plus {
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  line-height: 27px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.video-overlay p {
+  opacity: .7;
+}
+
+.video-overlay p.video-top-desc {
+  opacity: 1;
+}
+
+span {
+  position: relative;
+}
+
+span::before {
+  position: absolute;
+  top: 12px;
+  left: -35px;
+  height: 2px;
+  width: 30%;
+  content: '';
+  background-color: #fff;
+}
+
+span::after {
+  position: absolute;
+  top: 12px;
+  right: -35px;
+  height: 2px;
+  width: 30%;
+  content: '';
+  background-color: #fff;
+}
