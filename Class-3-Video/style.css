@@ -1,0 +1,45 @@
+
+
+.check-icon li::before {
+  font-family: fontawesome;
+  content: "\f00c";
+}
+
+.video-area{
+  position: relative;
+}
+
+.video-area-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 45%;
+  background-image: url(Img/li-yang-5h_dMuX_7RE-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 0px 20px #888;
+}
+
+.video-play-btn{
+  position: absolute;
+  right: -35px;
+  top: 40%;
+  margin-top: -50;
+}
+
+ul.check-icon{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-icon li{
+  position: relative;
+  padding-left: 30px;
+}
+
+.check-icon li::before{
+  position: absolute;
+  left: 0;
+}
